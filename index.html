@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mahjong Score Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  </head>
+<body>
+      <div class="container">
+        <h1>Mahjong Score Tracker</h1>
+        <div id="scoreboard">
+            <!-- Scores will be displayed here -->
+            <table>
+                <thead>
+                    <tr>
+                      <th class="wider">Ronde</th>
+                        <th>
+                          <span id="player1Name">Player 1</span>
+                        </th>
+                        <th >
+                          <span id="player2Name">Player 2</span>
+                        </th>
+                        <th>
+                          <span id="player3Name">Player 3</span>
+                        </th>
+                        <th >
+                          <span id="player4Name">Player 4</span>
+                        </th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody id="scoreRows">
+                    <!-- Score rows will be added dynamically -->
+                </tbody>
+                <tfoot>
+                  <tr id="totalRow">
+                      <td>Total:</td>
+                      <td id="totalPlayer1"></td>
+                      <td id="totalPlayer2"></td>
+                      <td id="totalPlayer3"></td>
+                      <td id="totalPlayer4"></td>
+                      <td></td> <!-- Empty cell for the remove button column -->
+                  </tr>
+              </tfoot>          
+            </table>
+        </div>
+    </div>
+    <form id="scoreForm">
+      <label for="player1">Player 1:</label>
+      <input type="number" id="player1" name="player1" required>
+      <label for="player2">Player 2:</label>
+      <input type="number" id="player2" name="player2" required>
+      <label for="player3">Player 3:</label>
+      <input type="number" id="player3" name="player3" required>
+      <label for="player4">Player 4:</label>
+      <input type="number" id="player4" name="player4" required>
+      <label for="eastWind">East Wind:</label>
+      <select id="eastWind" name="eastWind">
+          <option value="1">Player 1</option>
+          <option value="2">Player 2</option>
+          <option value="3">Player 3</option>
+          <option value="4">Player 4</option>
+      </select>
+      <label for="winner">Winner:</label>
+      <select id="winner" name="winner">
+          <option value="1">Player 1</option>
+          <option value="2">Player 2</option>
+          <option value="3">Player 3</option>
+          <option value="4">Player 4</option>
+      </select>
+      <button type="submit" id="addScoreBtn">Add Score</button>
+  </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

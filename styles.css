@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+#scoreboard {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.wider {
+  width: 125px; /* Adjust the width as needed */
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.removeBtn i {
+  color: black; /* Adjust color as needed */
+  font-size: 12px; /* Adjust font size as needed */
+}
+
+.winner {
+  /* Add styles for winner */
+  background-color: #ffd700; /* Example: Yellow background for winner */
+}
+
+tfoot {
+  font-weight: bold;
+}
+
+.eastWind {
+  /* Add styles for East Wind */
+  color: red; /* Example: Red text color for East Wind */
+}
+
