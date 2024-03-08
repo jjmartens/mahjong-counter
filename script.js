@@ -4,10 +4,13 @@ function getScores() {
 }
 
 function removeScore(index) {
-  const scores = getScores();
-  scores.splice(index, 1);
-  localStorage.setItem('mahjongScores', JSON.stringify(scores));
-  displayScores(scores);
+  const confirmation = confirm("Sure?");
+  if (confirmation) {
+    const scores = getScores();
+    scores.splice(index, 1);
+    localStorage.setItem('mahjongScores', JSON.stringify(scores));
+    displayScores(scores);
+  }
 }
 
 // Function to display scores on the webpage
